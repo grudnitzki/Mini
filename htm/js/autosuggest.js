@@ -64,7 +64,6 @@ jQuery("#autocomplete").autocomplete({
             var json2 = data.RelatedPages;
             var json3 = data.News;
             
-            
             if(jQuery.isArray(json0)) {
                 json0 = json0;
             }else{
@@ -88,8 +87,7 @@ jQuery("#autocomplete").autocomplete({
                                                                   
             var json = [].concat(json0,json1,json2,json3);
             
-                                
-              //console.log(json);
+            //console.log(json);
             
             response(jQuery.map(json, function (item) {
                 return {
